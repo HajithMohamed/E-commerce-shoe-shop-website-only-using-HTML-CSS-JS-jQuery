@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400);
+.review-page-new{
+    padding: 10px;
+}
+.review-page-new .pop-up-button{
+    font-size: 24px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+}
+.review-page-new .post
+{
+    display:none;
+    font-size: 20px;
+    width: 50vw;
+    box-shadow: 0 0 10px rgb(105, 101, 101);
+    padding: 10px;
+    
+}
+.review-page-new .post .text{
+    margin-top: 20px;
+}
+.review-page-new .post .edit{
+    font-size: 16px;
+    color:black;
+    font-weight: 500;
+    cursor: pointer;
+    transform: translate(90%,50%)
+}
+.review-page-new .post .post-btton{
+    font-size: 24px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+}
+.review-page-new .post .post-btton:hover{
+    cursor: pointer;
+    background-color: rgb(75, 70, 70);
+    color: black;
+}
+.pop-up-button:hover{
+    cursor: pointer;
+    background-color: rgb(75, 70, 70);
+    color: black;
+}
+.pop-up{
+    width: 50vw;
+    height: 67vh;
+    top:25%;
+    left: 50%;
+    transform: translate(50%,-3%)scale(1);
+    transition: transform 0.4s, top 0.4s;
+    display:none;
+}
+.pop-up #form{
+    width: 100%;
+    height:100%;
+    box-shadow: 0 0 10px rgb(105, 101, 101);
+    padding: 10px;
+    
+}
+.pop-up #form h1{
+    text-align: center;
+    font-family: cursive;
+
+}
+.pop-up #form .input-group{
+    display: flex;
+    flex-direction: column;
+
+}
+.pop-up #form .input-group input{
+    height: 30px;
+    border-radius: 20px;
+    outline: none;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 18px;
+    border: 3px solid rgb(197, 48, 97);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.pop-up #form .input-group input:focus{
+    outline: none;
+}
+.pop-up #form .input-group label {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:10px ;
+
+}
+.pop-up #form .input-group textarea{
+    height: 100px;
+    border: 3px solid rgb(197, 48, 97);
+    border-radius: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+}
+.pop-up #form .input-group textarea:focus{
+    outline: none;
+    
+}
+.pop-up #form button{
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(197, 48, 97);
+    border-radius: 20px;
+    outline: none;
+    font-size: 20px;
+    color: white;
+    height: 50px;
+}
+.pop-up #form button:hover{
+    background-color: rgb(3, 3, 3);
+    cursor: pointer;
+}
+.review {
+    height: 300px;
+    width: 400px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.review h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.review .para{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 3px solid black;
+    padding: 5px;
+}
+
+.review .rating{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top: 3px solid black;
+}

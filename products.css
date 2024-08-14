@@ -1,0 +1,158 @@
+.container{
+    display: flex;
+}
+.product-image{
+    width: 50%;
+    box-shadow: 0 0 8px rgb(193, 187, 189);
+    margin-right: 50px;
+}
+.product-image img{
+    width: 100%;
+}
+.order-setails {
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
+.order-setails #input-group{
+    display: flex;
+    flex-direction: column;
+}
+.order-setails #input-group input,textarea{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    border: none;
+    border-bottom: 3px solid rgb(197, 48, 97);
+    font-size: 20px;
+}
+.order-setails #input-group input:focus,textarea:focus{
+    outline: none;
+   
+}
+#input-group label{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    height: 50px;
+
+}
+.select-container .select-box{
+    height: 50px;
+    border: none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 100%;
+    color:white;
+    background-color:rgb(197, 48, 97) ;
+    font-size: 20px;
+    outline: none;
+}
+.select-container .icon-container{
+    width: 50px;
+    height: 100%;
+    background-color:rgb(230, 99, 142) ;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+}
+.select-container .icon-container i{
+    font-size: 30px;
+    color:white;
+}
+h1{
+    text-align: center;
+}
+#radio-button input[type="radio"]{
+    display: none;
+}
+#radio-button label{
+    position: relative;
+    color: rgb(197, 48, 97);
+    font-family: "Popins",sans-serif;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8em;
+    border: 3px solid rgb(197, 48, 97);
+    padding: 1em 2em;
+    border-radius: 0.5em;
+}
+#radio-button label:before{
+    content: "";
+    height: 1em;
+    width: 1em;
+    border: 3px solid rgb(197, 48, 97);
+    border-radius: 50%;
+}
+#radio-button input[type="radio"]:checked +label:before {
+    height: 0.5em;
+    width: 0.5em;
+    border: 0.35em solid white;
+    background-color: rgb(197, 48, 97);
+}
+#radio-button input[type="radio"]:checked + label {
+    background-color: rgb(197, 48, 97);
+    color: white;
+}
+#input-group button{
+    margin-top: 10px;
+    height: 50px;
+    background-color: rgb(197, 48, 97);
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid white;
+}
+button:hover{
+    cursor: pointer;
+}
+#input-group .error{
+    color:red;
+    font-size: 10px;
+}
+#input-group .fail input{
+    border-bottom: 1px solid red;
+}
+#input-group .success input{
+    border-bottom: 1px solid green;
+}
+.order-setails .pop-up{
+    position: absolute;
+    width: 300px;
+    background: whitesmoke;
+    border-radius: 6px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%)scale(1);
+    text-align: center;
+    padding: 0 30px 30px;
+    display: none;
+    transition: transform 0.4s, top 0.4s;
+}
+.pop-up p{
+    color: rgb(197, 48, 97);
+}
+.pop-up button{
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: rgb(197, 48, 97);
+    font-size: 16px;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+}
+.order-setails .pop-up img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+}
+

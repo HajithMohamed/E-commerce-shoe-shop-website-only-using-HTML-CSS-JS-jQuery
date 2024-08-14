@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 10px;
+  margin-top: 10px;
     height: 250px;
     display: flex;
     background-color:whitesmoke;  
@@ -130,7 +130,7 @@
     font-size: 12px;
   }
   .footer-box:last-child {
-    display:block;
+    display:inline-block;
   }
   
 }

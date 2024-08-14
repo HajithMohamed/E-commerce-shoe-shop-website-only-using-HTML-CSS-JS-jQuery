@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="styleSheet" href="navBar.css">
+    <link rel="styleSheet" href="home-page.css">
+    <link rel="styleSheet" href="footer.css">
+    <link rel="styleSheet" href="review.css">
+    <link rel="styleSheet" href="file:///E:/fontawesome/css/all.css">
+
+    <script src="slideBar.js"></script>
+    <script src="review.js"></script>
+</head>
+<body>
+    <div class="sign">
+        <ul>
+            <li><button>Sign-In</button></li>
+            <li><button>Sign-Up</button></li>
+        </ul>
+
+    </div>
+    <nav id="navbar">
+        
+
+            <ul class="side_items">
+                <li onclick="hideSlideBar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="10 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="home.html" target="_parent">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="products/products.html" target="_blank">Product</a></li>
+                <li><a href="#">Review</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="adidas-logo.png" alt="logo"id="img">
+                <P>Shoes</P>
+            </div>
+
+             <ul>
+                
+                <li class="hideOnMobile"><a href="home.html" target="_parent">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Abot Us</a></li>
+                <li class="hideOnMobile"><a href="products/products.html" target="_blank">Product</a></li>
+                <li class="hideOnMobile"><a href="#">Review</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li onclick="showSlideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+            </ul>
+          
+      
+    </nav>
+    <div class="container">
+        <div class="reviews">
+            <h1>Your review for Delivery</h1>
+            <div class="pic"></div>
+            <div class="review-page1">
+                <div class="post">
+                    <div class="text">
+                        Thanks for rating...
+                    </div>
+                    <div class="edit">
+                        Edit
+                    </div>
+                </div>
+                <div class="star-widget1">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1"class="fa fa-star"></label>
+                    <form action="#" class="form1">
+                        <div class="textarea1">
+                            <header></header>
+                            <textarea cols="30" placeholder="Describe Your experience..."></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="button" onclick="display(1)">Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <h1>Your review for User experience</h1>
+            <div class="pic"></div>
+            <div class="review-page2">
+                <div class="post">
+                    <div class="text">
+                        Thanks for rating...
+                    </div>
+                    <div class="edit">
+                        Edit
+                    </div>
+                </div>
+                <div class="star-widget2">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1"class="fa fa-star"></label>
+                    <form action="#" class="form2">
+                        <div class="textarea2">
+                            <header></header>
+                            <textarea cols="30" placeholder="Describe Your experience..."></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="button" onclick="display(2)">Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <h1>Your review for product safety</h1>
+            <div class="pic"></div>
+            <div class="review-page3">
+                <div class="post">
+                    <div class="text">
+                        Thanks for rating...
+                    </div>
+                    <div class="edit">
+                        Edit
+                    </div>
+                </div>
+                <div class="star-widget3">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1"class="fa fa-star"></label>
+                    <form action="#" class="form3">
+                        <div class="textarea3">
+                            <header></header>
+                            <textarea cols="30" placeholder="Describe Your experience..."></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="button" onclick="display(3)">Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <h1>Your review for product safety</h1>
+            <div class="pic"></div>
+            <div class="review-page4">
+                <div class="post">
+                    <div class="text">
+                        Thanks for rating...
+                    </div>
+                    <div class="edit">
+                        Edit
+                    </div>
+                </div>
+                <div class="star-widget4">
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2"class="fa fa-star"></label>
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1"class="fa fa-star"></label>
+                    <form action="#" class="form4">
+                        <div class="textarea4">
+                            <header></header>
+                            <textarea cols="30" placeholder="Describe Your experience..."></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit" id="button" onclick="display(49)">Post</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><a href="#">Colombo,Sri lanka,</a></p>
+            <p><a href="#">+654338164</a></p>
+            <p><a href="#">adidaspvt@gmail.com</a></p>
+        </div>
+        <div class="footer-box">
+            <h3>Get Help</h3>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Shipping</a></p>
+            <p><a href="#">Return</a></p>
+            <p><a href="#">Payment Options</a></p>
+
+        </div>
+        <div class="footer-box">
+            <h3>Our Stores</h3>
+            <p><a href="#">Sri lanka</a></p>
+            <p><a href="#">India</a></p>
+            <p><a href="#">USA</a></p>
+            <p><a href="#">UK</a></p>
+        </div>
+        <div class="footer-box">
+            <h3>News Letter</h3>
+            <div id="input-field">
+                <input type="mail" name="mail" id="mail" onblur="nullCheck()">
+                <label for="mail">Enter your mail address:</label>
+                <div id="error"></div>
+                <br>
+                <button id="btn">Subscribe</button>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    <div class="social-media-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    
+    
+</body>
+</html>

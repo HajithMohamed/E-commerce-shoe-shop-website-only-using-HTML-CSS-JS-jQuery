@@ -1,0 +1,215 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400);
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.reviews{
+    margin: 10px;
+    padding: 10px;;
+    border: 1px solid black;
+}
+
+.review-page1,.review-page2,.review-page3,.review-page4{
+    position: relative;
+    width: 400px;
+    background-color: rgb(197, 48, 97);
+    padding: 20px 30px;
+    border: 1px solid rgb(197, 48, 97);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.review-page1 .star-widget1 input,
+.review-page2 .star-widget2 input,
+.review-page3 .star-widget3 input,
+.review-page4 .star-widget4 input{
+    display: none;
+
+}
+.review-page1 .text,
+.review-page2 .text,
+.review-page3 .text,
+.review-page4 .text{
+    font-size: 25px;
+    color:white;
+    font-weight: 500;
+
+}
+.review-page1 .post,
+.review-page2 .post,
+.review-page3 .post,
+.review-page4 .post
+{
+    display: none;
+}
+.review-page1 .edit,
+.review-page2 .edit,
+.review-page3 .edit,
+.review-page4 .edit{
+    font-size: 16px;
+    color:black;
+    right: 10px;
+    top: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.review-page1 .edit:hover,
+.review-page2 .edit:hover,
+.review-page3 .edit:hover,
+.review-page4 .edit:hover{
+    text-decoration: underline;
+}
+.review-page1 .star-widget1 label,
+.review-page2 .star-widget2 label,
+.review-page3 .star-widget3 label,
+.review-page4 .star-widget4 label{
+    font-size: 40px;
+    color: whitesmoke;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+.review-page1 .star-widget1 input:not(:checked)~label:hover,
+.review-page1 .star-widget1 input:not(:checked)~label:hover~label{
+    color:#fd4 ;
+
+}
+.review-page2 .star-widget2 input:not(:checked)~label:hover,
+.review-page2 .star-widget2 input:not(:checked)~label:hover~label{
+    color:#fd4 ;
+
+}
+.review-page3 .star-widget3 input:not(:checked)~label:hover,
+.review-page3 .star-widget3 input:not(:checked)~label:hover~label{
+    color:#fd4 ;
+
+}
+.review-page4 .star-widget4 input:not(:checked)~label:hover,
+.review-page4 .star-widget4 input:not(:checked)~label:hover~label{
+    color:#fd4 ;
+
+}
+
+.review-page1 .star-widget1 input#rate-5:checked~label,
+.review-page2 .star-widget2 input#rate-5:checked~label,
+.review-page3 .star-widget3 input#rate-5:checked~label,
+.review-page4 .star-widget4 input#rate-5:checked~label
+{
+    color:#fe7 ;
+    text-shadow: 0 0 20px #952;
+
+}
+.review-page1 .form1,
+.review-page2 .form2,
+.review-page3 .form3,
+.review-page4 .form4{
+    display: none;
+}
+.review-page1 .star-widget1 input:checked~.form1 ,
+.review-page2 .star-widget2 input:checked~.form2 ,
+.review-page3 .star-widget3 input:checked~.form3,
+.review-page4 .star-widget4 input:checked~.form4{
+    display: block;
+}
+
+.review-page1 .star-widget1 #rate-1:checked~ .form1 header::before,
+.review-page2 .star-widget2 #rate-1:checked~ .form2 header::before,
+.review-page3 .star-widget3 #rate-1:checked~ .form3 header::before,
+.review-page4 .star-widget4 #rate-1:checked~ .form4 header::before
+{
+    content: "I just hate it 😠";
+}
+.review-page1 .star-widget1 #rate-2:checked~ .form1 header::before,
+.review-page2 .star-widget2 #rate-2:checked~ .form2 header::before,
+.review-page3 .star-widget3 #rate-2:checked~ .form3 header::before,
+.review-page4 .star-widget4 #rate-2:checked~ .form4 header::before{
+    content: "I don't like it 😏";
+}
+.review-page1 .star-widget1 #rate-2:checked~ .form1 header::before,
+.review-page2 .star-widget2 #rate-2:checked~ .form2 header::before,
+.review-page3 .star-widget3 #rate-2:checked~ .form3 header::before,
+.review-page4 .star-widget4 #rate-2:checked~ .form4 header::before{
+    content: "It is awsome 😱";
+}
+.review-page1 .star-widget1 #rate-2:checked~ .form1 header::before,
+.review-page2 .star-widget2 #rate-2:checked~ .form2 header::before,
+.review-page3 .star-widget3 #rate-2:checked~ .form3 header::before,
+.review-page4 .star-widget4 #rate-2:checked~ .form4 header::before{
+    content: "I just like it 😎";
+}
+.review-page1 .star-widget1 #rate-2:checked~ .form1 header::before,
+.review-page2 .star-widget2 #rate-2:checked~ .form2 header::before,
+.review-page3 .star-widget3 #rate-2:checked~ .form3 header::before,
+.review-page4 .star-widget4 #rate-2:checked~ .form4 header::before{
+    content: "I just love it 😍";
+}
+.review-page1 .form1 header,
+.review-page2 .form2 header,
+.review-page2 .form3 header,
+.review-page3 .form4 header{
+    width: 100%;
+    font-size: 25px;
+    color:#fe7 ;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.review-page1 .form1 .textarea1,
+.review-page2 .form2 .textarea2,
+.review-page3 .form3 .textarea3,
+.review-page4 .form4 .textarea4{
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.review-page1 .form1 .textarea1 textarea,
+.review-page2 .form2 .textarea2 textarea,
+.review-page3 .form3 .textarea3 textarea,
+.review-page4 .form4 .textarea4 textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid #333;
+    color: #eee;
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+}
+.review-page1 form .button,
+.review-page2 form .button,
+.review-page3 form .button,
+.review-page4 form .button{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+.review-page1 form .button button,
+.review-page2 form .button button,
+.review-page3 form .button button,
+.review-page4 form .button button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgb(197, 48, 97);
+    outline: none;
+    color: #999;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.review-page1 form .button button:hover,
+.review-page2 form .button button:hover,
+.review-page3 form .button button:hover,
+.review-page4 form .button button:hover{
+    background-color: #1b1b1b;
+}
+
+
+
+

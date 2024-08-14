@@ -1,5 +1,5 @@
 .footer{
-    margin-top: 10px;
+  margin-top: 10px;
     height: 250px;
     display: flex;
     background-color:whitesmoke;  
@@ -47,7 +47,7 @@
   margin-left: 20px;
 }
 
-.fa {
+.social-media-icons .fa {
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 10px;
@@ -60,23 +60,23 @@
  
   }
 
-  .fa:hover {
+  .social-media-icons .fa:hover {
     opacity: 0.7;
   }
 
-  .fa-facebook {
+  .social-media-icons .fa-facebook {
     background:whitesmoke;
     color: black;
   }
-  .fa-twitter {
+  .social-media-icons .fa-twitter {
     background: whitesmoke;
     color: black;
   }
-  .fa-linkedin {
+  .social-media-icons .fa-linkedin {
     background: whitesmoke;
     color: black;
   }
-  .fa-instagram{
+  .social-media-icons .fa-instagram{
     background: whitesmoke;
     color: black;
   }
@@ -130,7 +130,7 @@
     font-size: 12px;
   }
   .footer-box:last-child {
-    display:block;
+    display:inline-block;
   }
   
 }
