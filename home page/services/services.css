@@ -2,27 +2,32 @@
     text-align: center;
 }
 .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+   
    
 }
 .services .sub-div{
+    display: flex;
+    flex-direction: column;
     box-shadow: 0 0 8px black;
+    width: 25%;
     height: 300px;
-    margin: 10px;
+    margin-bottom: 10px;
     padding: 10px;
+    margin: auto;
 }
 
 .services .sub-div h2{
     text-align: center;
-    margin-left: 10px;
+   
 }
 
  .sub-div .images{
     height: 230px;
+    margin-left: 40px;
 }
 .sub-div .images img{
-    height: 230;
-    width: 60%;
+    height: 230px;
+    width: 250px;
+    padding-left: 20px;
 
 }

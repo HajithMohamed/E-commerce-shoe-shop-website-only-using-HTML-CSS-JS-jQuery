@@ -36,3 +36,11 @@ const validateEmail = (email) => {
       );
   };
   
+
+  $(document).ready(function(){
+    $("#div1").on("click",function(){
+        $("#div1").css("width","100%");
+        $("#div1").css("margin","10px");
+        $(".para").show()
+    })
+  })
