@@ -15,8 +15,14 @@
 
 .services .sub-div h2{
     text-align: center;
+    margin-left: 10px;
 }
 
  .sub-div .images{
     height: 230px;
+}
+.sub-div .images img{
+    height: 230;
+    width: 60%;
+
 }
