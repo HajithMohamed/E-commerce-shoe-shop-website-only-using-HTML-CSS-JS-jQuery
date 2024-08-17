@@ -1,10 +1,6 @@
  h1{
     text-align: center;
 }
-.services {
-   
-   
-}
 .services .sub-div{
     display: flex;
     flex-direction: column;
