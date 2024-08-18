@@ -9,7 +9,7 @@
     <link rel="styleSheet" href="home-page.css">
     <link rel="styleSheet" href="footer.css">
     <link rel="styleSheet" href="review-page-new.css">
-    <link rel="styleSheet" href="file:///E:/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script defer src="slideBar.js"></script>
 </head>
@@ -61,19 +61,8 @@
     </div>
     
     <div class="pop-up">
-            <div class="post">
-                <div class="text">
-                    Thanks for Your Valuable Reviews,
-                    Have a nice day... 
-                </div>
-                <div class="edit" onclick="editcontent()">
-                    Edit
-                </div>
-                <div class="post-btton" onclick="addDiv()">
-                    Post
-                </div>
-            </div>
-        <form id="form" action="#">
+           
+            <div id="form">
             <h1>Feed Back</h1>
             <div class="input-group">
                 <label for="name">Enter Your Name:</label>
@@ -91,7 +80,18 @@
                 <div class="error"></div>
             </div>
             <button onclick="thankyoumsg()">Post</button>
-        </form>
+            <div class="post">
+            
+                    Thanks for Your Valuable Reviews,
+                    Have a nice day... 
+            
+                <div class="edit" onclick="editcontent()">
+                    Edit
+                </div>
+                <div class="post-btton" onclick="addDiv()">
+                    Post
+                </div>
+            </div>
     </div>
    </div>
     <div class="footer">

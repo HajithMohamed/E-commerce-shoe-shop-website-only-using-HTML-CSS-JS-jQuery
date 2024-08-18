@@ -126,7 +126,6 @@ button:hover{
     border-bottom: 1px solid green;
 }
 .order-setails .pop-up{
-    position: absolute;
     width: 300px;
     background: whitesmoke;
     border-radius: 6px;

@@ -4,7 +4,17 @@ const mobile=document.getElementById("mobile")
 const address=document.getElementById("address")
 
 
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    if (validateForm()) {
+        stockAmount();  // Show the popup if the form is valid
+    }
+})
+
+
 function validateForm(){
+
     let isValid = true;
 
     const qtyVal=qty.value
@@ -60,11 +70,11 @@ function setSuccess(element){
 
     errorElement.classList.remove("fail")
     errorElement.classList.add("success")
-    stockAmount()
+    
 
 }
 function stockAmount() {
-    const popUp = document.getElementById(`pop-up`);
+    const popUp = document.getElementById("pop-up");
    // const span = document.getElementById(`product`);
     //const qty = parseInt(span.innerHTML);
    // let value = qty - 1;

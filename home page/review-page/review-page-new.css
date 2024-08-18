@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400);
+body, .review-page-new {
+    font-family: 'Poppins', sans-serif;
+}
 .review-page-new{
     padding: 10px;
 }
@@ -29,7 +32,6 @@
     color:black;
     font-weight: 500;
     cursor: pointer;
-    transform: translate(90%,50%)
 }
 .review-page-new .post .post-btton{
     font-size: 24px;
