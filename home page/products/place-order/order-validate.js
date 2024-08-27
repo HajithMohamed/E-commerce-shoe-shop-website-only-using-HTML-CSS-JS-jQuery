@@ -4,13 +4,7 @@ const mobile=document.getElementById("mobile")
 const address=document.getElementById("address")
 
 
-form.addEventListener("submit", function(event) {
-    event.preventDefault(); // Prevent default form submission
 
-    if (validateForm()) {
-        stockAmount();  // Show the popup if the form is valid
-    }
-})
 
 
 function validateForm(){
@@ -47,7 +41,8 @@ function validateForm(){
     } else {
         setSuccess(address)
     
-}
+    }
+    return isValid
 }
     
     

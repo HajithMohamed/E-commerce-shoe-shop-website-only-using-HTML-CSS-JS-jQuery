@@ -57,10 +57,20 @@ const validateEmail = (email) => {
   const mobile=document.getElementById("mobile")
   const address=document.getElementById("address")
   
- 
+  form.addEventListener("submit", function(event) {
+    // Prevent default form submission
+
+   if (!validateForm()) {
+       event.preventDefault();
+       
+   }
+   else{
+        stockAmount();  // Show the popup if the form is valid
+   }
+})
 
   
-  function validateForm(event){
+  function validateForm(){
       let isValid = true;
   
       const qtyVal=qty.value.trim()
@@ -95,14 +105,8 @@ const validateEmail = (email) => {
           isValid = false;
       } else {
           setSuccess(address)
-      
   }
-        if (!isValid) {
-            event.preventDefault();
-        } else {
-            stockAmount();
-        }
-  }
+}
       
       
   
@@ -129,16 +133,18 @@ const validateEmail = (email) => {
   }
   function stockAmount() {
       const popUp = document.getElementById(`pop-up`);
-      const span1=document.getElementById("popop-up-span1")
+      const span1=document.getElementById("pop-up-span1")
       const qtyVal=qty.value
       span1.innerHTML = qtyVal;
       popUp.style.display="block";
-      
+      console.log(qtyVal);
   }
+  
+  
   
   function closePopUp() {
       const popUp = document.getElementById(`pop-up`);
       popUp.style.display="none";
   }
-  form.addEventListener("submit", validateForm);
+  
   
