@@ -13,8 +13,7 @@ function hideSlideBar(){
         let error="Please fill this"
         const mailVal=document.getElementById("mail").value;
         if (!mailVal){
-           msg.innerHTML=error;
-           //console.log(msg);    
+           msg.innerHTML=error;    
         } 
         button.addEventListener("click",()=>{
                 if (!mailVal){
@@ -58,14 +57,13 @@ const validateEmail = (email) => {
   const address=document.getElementById("address")
   
   form.addEventListener("submit", function(event) {
-    // Prevent default form submission
 
    if (!validateForm()) {
        event.preventDefault();
        
    }
    else{
-        stockAmount();  // Show the popup if the form is valid
+        stockAmount();  
    }
 })
 
@@ -93,7 +91,7 @@ const validateEmail = (email) => {
       } else if (isNaN(mobileVal)) {
           setError(mobile, "Mobile Number must be in numbers");
           isValid = false;
-      } else if (mobileVal.length !== 10) {
+      } else if (mobileVal.length !=10) {
         setError(mobile, "Mobile Number must be 10 digits");
         isValid = false;
       }else {
@@ -132,12 +130,23 @@ const validateEmail = (email) => {
   
   }
   function stockAmount() {
+      const input=document.querySelector("#size")
       const popUp = document.getElementById(`pop-up`);
       const span1=document.getElementById("pop-up-span1")
+      const span2=document.querySelector("#si")
+      const size=input.options[input.selectedIndex].value
       const qtyVal=qty.value
+      const span3=document.querySelector("#price")
+
+      const price=qtyVal*15
+      span2.innerHTML=size
       span1.innerHTML = qtyVal;
+      span3.innerHTML = price;
       popUp.style.display="block";
-      console.log(qtyVal);
+
+
+
+
   }
   
   

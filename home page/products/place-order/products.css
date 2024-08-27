@@ -126,12 +126,12 @@ button:hover{
     border-bottom: 1px solid green;
 }
 .order-setails .pop-up{
-    width: 300px;
+    width: 400px;
     background: whitesmoke;
     border-radius: 6px;
     top:50%;
     left: 50%;
-    transform: translate(-50%,-50%)scale(1);
+    transform: translate(-50%,-100%)scale(1);
     text-align: center;
     padding: 0 30px 30px;
     display: none;
@@ -139,6 +139,7 @@ button:hover{
 }
 .pop-up p{
     color: rgb(197, 48, 97);
+    font-size: 20px;
 }
 .pop-up button{
     width: 100%;
