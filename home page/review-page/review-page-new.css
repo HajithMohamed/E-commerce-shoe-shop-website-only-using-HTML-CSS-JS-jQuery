@@ -87,24 +87,30 @@ body, .review-page-new {
     background-color: rgb(3, 3, 3);
     cursor: pointer;
 }
-.reviews .review {
+.reviews{
+    display: flex;
+    
+   
+}
+.reviews #review {
+    flex-direction: column;
     height: 300px;
-    width: 400px;
+    width: 25%;
     box-shadow: 0 0 8px black;
     padding: 10px;
 }
-.reviews .review h2{
+.reviews #review h2{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.reviews .review .para{
+.reviews #review .para{
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 3px solid black;
     padding: 5px;
 }
 
-.reviews .review .rating{
+.reviews #review .rating{
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 3px solid black;

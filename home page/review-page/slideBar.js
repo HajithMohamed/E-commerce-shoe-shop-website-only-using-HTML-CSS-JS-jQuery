@@ -45,8 +45,9 @@ const button = document.querySelector(".pop-up-button");
 const popUp = document.querySelector(".pop-up");
 const form=document.querySelector("#form")
 const name1 = document.getElementById("name")
-const feedback = document.getElementById("review")
+const feedback = document.getElementById("Review")
 const rating = document.getElementById("star")
+let global=2
 
 console.log();
 
@@ -69,8 +70,8 @@ form.addEventListener("submit",(event)=> {
 })
 
 function addDiv() {
-    let global = 2;
-    global++;
+    
+    
     popUp.style.display = "none";
     button.style.display = "block";
 
@@ -81,7 +82,7 @@ function addDiv() {
     console.log(feedbackVAl1)
 
     const newReviewContent = `
-    <div class="review" id="Review${global}"
+    <div class="review${global}" id="review"
         <h2>${nameVal}</h2>
          <div class="rating">
             <p>Rating: <span id="rating">${ratingVAL}</span> Stars</p>
@@ -90,8 +91,9 @@ function addDiv() {
             ${feedbackVAl1}
         </div>
        `;
-
-    review.innerHTML = newReviewContent;
+        console.log(global);
+        
+    review.innerHTML += newReviewContent;
     review.style.display = "block";
 }
 
@@ -100,6 +102,7 @@ function closePopUp() {
     popUp.style.display = "none";
 }
 function validateForm(){
+    global++;
     const nameVal =name1.value;
     const feedbackVAl =review.value;
     const ratingVAL = rating.value;
