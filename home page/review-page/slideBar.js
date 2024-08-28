@@ -37,55 +37,59 @@ const validateEmail = (email) => {
         );
 };
 
-let global = 1;
 
-const review = document.querySelector(".review");
-const post = document.querySelector(".post");
+
+const review = document.querySelector(".reviews");
+const post = document.querySelector("#post");
 const button = document.querySelector(".pop-up-button");
 const popUp = document.querySelector(".pop-up");
 const form=document.querySelector("#form")
+const name1 = document.getElementById("name")
+const feedback = document.getElementById("review")
+const rating = document.getElementById("star")
+
+console.log();
+
+
 function showForm() {
     button.style.display = "none"
     popUp.style.display = "block"
-    post.style.display = "none"
     review.style.display = "none"
-    console.log(post);
     
-    global++;
 }
 
 form.addEventListener("submit",(event)=> {
-    event.preventdefault()
-    post.style.display = "block"
-    popUp.style.display = "none"
-    button.style.display = "none"
+    if(validateForm()){
+        event.preventDefault()
+         addDiv()
+    }
+    else
+        event.preventDefault()
+    
 })
 
-
-function editcontent() {
-    post.style.display = "none";
-    popUp.style.display = "block";
-    button.style.display = "none";
-}
-
 function addDiv() {
-    post.style.display = "none";
+    let global = 2;
+    global++;
     popUp.style.display = "none";
     button.style.display = "block";
 
-    const name = document.getElementById("name").value;
-    const feedback = document.getElementById("review").value;
-    const rating = document.getElementById("star").value;
+    const nameVal =name1.value;
+    const feedbackVAl1 =feedback.value;
+    const ratingVAL = rating.value;
+
+    console.log(feedbackVAl1)
 
     const newReviewContent = `
-        <h2>${name}</h2>
+    <div class="review" id="Review${global}"
+        <h2>${nameVal}</h2>
+         <div class="rating">
+            <p>Rating: <span id="rating">${ratingVAL}</span> Stars</p>
+        </div>
         <div class="para">
-            ${feedback}
+            ${feedbackVAl1}
         </div>
-        <div class="rating">
-            <p>Rating: <span id="rating">${rating}</span></p>
-        </div>
-    `;
+       `;
 
     review.innerHTML = newReviewContent;
     review.style.display = "block";
@@ -94,4 +98,37 @@ function addDiv() {
 function closePopUp() {
     const popUp = document.getElementById(`pop-up`);
     popUp.style.display = "none";
+}
+function validateForm(){
+    const nameVal =name1.value;
+    const feedbackVAl =review.value;
+    const ratingVAL = rating.value;
+    
+    let isValid = true;
+
+    if(nameVal===""){
+        setError(name1,"Name is required");
+        isValid = false;
+    }
+    
+    if (feedbackVAl==="") {
+        setError(review, "Feedback is required");
+        isValid = false;
+    } 
+    if (ratingVAL==="") {
+        setError(rating, "Rating is required");
+        isValid = false;
+    } else if(isNaN(ratingVAL)){
+        setError(rating, "Rating should be in numbers");
+        isValid = false;
+
+       
+    }
+    
+    return isValid
+}
+function setError(element,message){
+    const Element=element.parentElement
+    const errorElement=Element.querySelector(".error")
+    errorElement.innerHTML=message
 }

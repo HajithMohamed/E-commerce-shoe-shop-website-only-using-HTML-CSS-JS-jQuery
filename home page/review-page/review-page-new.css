@@ -15,45 +15,7 @@ body, .review-page-new {
     border-radius: 20px;
     margin: auto;
 }
-.review-page-new .post
-{
-    display:none;
-    font-size: 20px;
-    width: 50vw;
-    box-shadow: 0 0 10px rgb(105, 101, 101);
-    padding: 10px;
-    
-}
-.review-page-new .post .text{
-    margin-top: 20px;
-}
-.review-page-new .post .edit{
-    font-size: 16px;
-    color:black;
-    font-weight: 500;
-    cursor: pointer;
-}
-.review-page-new .post .post-btton{
-    font-size: 24px;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    width: 100px;
-    padding: 10px;
-    border-radius: 20px;
-    margin: auto;
-    text-align: center;
-}
-.review-page-new .post .post-btton:hover{
-    cursor: pointer;
-    background-color: rgb(75, 70, 70);
-    color: black;
-}
-.pop-up-button:hover{
-    cursor: pointer;
-    background-color: rgb(75, 70, 70);
-    color: black;
-}
+
 .pop-up{
     width: 50vw;
     height: 67vh;
@@ -125,25 +87,30 @@ body, .review-page-new {
     background-color: rgb(3, 3, 3);
     cursor: pointer;
 }
-.review {
+.reviews .review {
     height: 300px;
     width: 400px;
-    border: 1px solid black;
+    box-shadow: 0 0 8px black;
     padding: 10px;
 }
-.review h2{
+.reviews .review h2{
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.review .para{
+.reviews .review .para{
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 3px solid black;
     padding: 5px;
 }
 
-.review .rating{
+.reviews .review .rating{
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-top: 3px solid black;
+}
+.error{
+    color: red;
+    font-size: 10px;
+    padding-left: 30px;
 }

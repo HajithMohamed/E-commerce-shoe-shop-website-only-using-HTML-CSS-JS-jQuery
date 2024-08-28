@@ -6,7 +6,6 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="styleSheet" href="navBar.css">
-    <link rel="styleSheet" href="home-page.css">
     <link rel="styleSheet" href="footer.css">
     <link rel="styleSheet" href="review-page-new.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -55,14 +54,22 @@
     <div class="pop-up-button" onclick="showForm()">
         Give your feed back
     </div>
-
-    <div class="review">
-        
+    <div class="reviews">
+        <div class="review" id="Review1">
+            <h2>Hajith Mohamed</h2>
+            <div class="rating">
+               <p>Rating: <span id="rating">5</span> Stars</p>
+           </div>
+           <div class="para">
+            Shop the latest Converse sneakers at bestrends.lk! Discover iconic designs, unparalleled comfort, and timeless style. Whether you’re looking for classic Chuck Taylors or the latest limited editions, bestrends.lk has you covered. Elevate your footwear game with Converse—perfect for any occasion.
+           </div> 
+        </div>
     </div>
+        
     
     <div class="pop-up">
            
-            <form id="form" action="#" onsubmit="thankyoumsg()">
+            <form id="form" action="#">
                 <h1>Feed Back</h1>
                 <div class="input-group">
                     <label for="name">Enter Your Name:</label>
@@ -75,24 +82,12 @@
                     <div class="error"></div>
                 </div>
                 <div class="input-group">
-                    <label for="star">Give Your star feedback:</label>
+                    <label for="star">Give Your feedback:</label>
                     <textarea name="review" id="review"></textarea>
                     <div class="error"></div>
                 </div>
-                <button type="submit">Post</button>
+               <button type="submit">Post</button>t
             </form>
-            <div class="post">
-            
-                    Thanks for Your Valuable Reviews,
-                    Have a nice day... 
-            
-                <div class="edit" onclick="editcontent()">
-                    Edit
-                </div>
-                <div class="post-btton" onclick="addDiv()">
-                    Post
-                </div>
-            </div>
     </div>
    </div>
     <div class="footer">
