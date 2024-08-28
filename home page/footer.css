@@ -1,11 +1,10 @@
 .footer{
-  min-height: 800px;
+    max-height:400px ;
     margin-top: 10px;
     height: 250px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
     background-color:whitesmoke;  
     border-bottom: 5px solid rgb(197, 48, 97);
 }

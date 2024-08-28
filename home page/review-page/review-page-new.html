@@ -62,24 +62,25 @@
     
     <div class="pop-up">
            
-            <div id="form">
-            <h1>Feed Back</h1>
-            <div class="input-group">
-                <label for="name">Enter Your Name:</label>
-                <input type="text" id="name">
-                <div class="error"></div>
-            </div>
-            <div class="input-group">
-                <label for="review">Give Your star rating:</label>
-                <input type="text" id="star" placeholder="Give this in numbers like (1,2,3...5)">
-                <div class="error"></div>
-            </div>
-            <div class="input-group">
-                <label for="star">Give Your star feedback:</label>
-                <textarea name="review" id="review"></textarea>
-                <div class="error"></div>
-            </div>
-            <button onclick="thankyoumsg()">Post</button>
+            <form id="form" action="#" onsubmit="thankyoumsg()">
+                <h1>Feed Back</h1>
+                <div class="input-group">
+                    <label for="name">Enter Your Name:</label>
+                    <input type="text" id="name">
+                    <div class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="review">Give Your star rating:</label>
+                    <input type="text" id="star" placeholder="Give this in numbers like (1,2,3...5)">
+                    <div class="error"></div>
+                </div>
+                <div class="input-group">
+                    <label for="star">Give Your star feedback:</label>
+                    <textarea name="review" id="review"></textarea>
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Post</button>
+            </form>
             <div class="post">
             
                     Thanks for Your Valuable Reviews,

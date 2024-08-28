@@ -43,7 +43,7 @@ const review = document.querySelector(".review");
 const post = document.querySelector(".post");
 const button = document.querySelector(".pop-up-button");
 const popUp = document.querySelector(".pop-up");
-
+const form=document.querySelector("#form")
 function showForm() {
     button.style.display = "none"
     popUp.style.display = "block"
@@ -54,14 +54,13 @@ function showForm() {
     global++;
 }
 
-function thankyoumsg() {
-    console.log("Displaying post div..."); // Debugging line
+form.addEventListener("submit",(event)=> {
+    event.preventdefault()
     post.style.display = "block"
     popUp.style.display = "none"
     button.style.display = "none"
-}
+})
 
-document.querySelector("#form").addEventListener("submit", thankyoumsg);
 
 function editcontent() {
     post.style.display = "none";
