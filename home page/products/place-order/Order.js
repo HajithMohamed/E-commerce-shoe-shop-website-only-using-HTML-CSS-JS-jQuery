@@ -56,6 +56,7 @@ const validateEmail = (email) => {
   const mobile=document.getElementById("mobile")
   const address=document.getElementById("address")
   
+  
   form.addEventListener("submit", function(event) {
 
    if (!validateForm()) {
@@ -70,7 +71,7 @@ const validateEmail = (email) => {
   
   function validateForm(){
       let isValid = true;
-  
+      const 
       const qtyVal=qty.value.trim()
       const mobileVal=mobile.value.trim()
       const addressVal=address.value.trim()
