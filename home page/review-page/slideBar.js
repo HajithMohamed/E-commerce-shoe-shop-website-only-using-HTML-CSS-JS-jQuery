@@ -82,19 +82,20 @@ function addDiv() {
     console.log(feedbackVAl1)
 
     const newReviewContent = `
-    <div class="review${global}" id="review"
+    <div class="review" >
         <h2>${nameVal}</h2>
          <div class="rating">
             <p>Rating: <span id="rating">${ratingVAL}</span> Stars</p>
         </div>
         <div class="para">
-            ${feedbackVAl1}
+            <p>${feedbackVAl1}</p>
         </div>
+    </div>
        `;
         console.log(global);
         
     review.innerHTML += newReviewContent;
-    review.style.display = "block";
+    review.style.display = "flex";
 }
 
 function closePopUp() {
