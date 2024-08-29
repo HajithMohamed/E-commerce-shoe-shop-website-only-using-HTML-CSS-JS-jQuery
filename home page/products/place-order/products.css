@@ -71,7 +71,9 @@ h1{
     text-align: center;
 }
 #radio-button input[type="radio"]{
-    display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
 }
 #radio-button label{
     position: relative;
@@ -84,6 +86,7 @@ h1{
     border: 3px solid rgb(197, 48, 97);
     padding: 1em 2em;
     border-radius: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
 }
 #radio-button label:before{
     content: "";
@@ -91,6 +94,8 @@ h1{
     width: 1em;
     border: 3px solid rgb(197, 48, 97);
     border-radius: 50%;
+    background-color: white;
+    transition: background-color 0.3s, border 0.3s;
 }
 #radio-button input[type="radio"]:checked +label:before {
     height: 0.5em;
@@ -155,4 +160,13 @@ button:hover{
     margin-top: -50px;
     border-radius: 50%;
 }
-
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image, .order-setails {
+        width: 100%;
+        margin: 0;
+    }
+}

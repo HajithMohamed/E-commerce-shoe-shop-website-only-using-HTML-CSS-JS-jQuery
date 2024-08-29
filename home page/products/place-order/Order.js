@@ -55,6 +55,7 @@ const validateEmail = (email) => {
   const qty=document.getElementById("qty")
   const mobile=document.getElementById("mobile")
   const address=document.getElementById("address")
+  const size=document.querySelector("#size")
   
   
   form.addEventListener("submit", function(event) {
@@ -71,7 +72,7 @@ const validateEmail = (email) => {
   
   function validateForm(){
       let isValid = true;
-      const 
+      const sizeVal=size.options[size.selectedIndex].value
       const qtyVal=qty.value.trim()
       const mobileVal=mobile.value.trim()
       const addressVal=address.value.trim()
@@ -104,7 +105,13 @@ const validateEmail = (email) => {
           isValid = false;
       } else {
           setSuccess(address)
-  }
+        }
+    if(sizeVal==="Select the size:"){
+        setError(size, "Please select any size");
+        isValid = false;
+    } else {
+        setSuccess(address)
+      }
 }
       
       
@@ -135,19 +142,26 @@ const validateEmail = (email) => {
       const popUp = document.getElementById(`pop-up`);
       const span1=document.getElementById("pop-up-span1")
       const span2=document.querySelector("#si")
+      const span3=document.querySelector("#price")
+      const span4=document.querySelector("#Payment")
+
+      const card=document.querySelector("#card")
+      const cash=document.querySelector("#cash")
+
       const size=input.options[input.selectedIndex].value
       const qtyVal=qty.value
-      const span3=document.querySelector("#price")
-
+      
+      if(card.checked){
+        span4.innerHTML="Card"
+      }
+      else if(cash.checked){
+        span4.innerHTML="Cash on delivery"
+      }
       const price=qtyVal*15
       span2.innerHTML=size
       span1.innerHTML = qtyVal;
       span3.innerHTML = price;
       popUp.style.display="block";
-
-
-
-
   }
   
   

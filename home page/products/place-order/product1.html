@@ -33,7 +33,7 @@
 
             <div class="logo">
                 <img src="adidas-logo.png" alt="logo"id="img">
-                <P>Shoes</P>
+                <p>Shoes</p>
             </div>
 
              <ul>
@@ -59,16 +59,14 @@
                 <h1>Purchasing Details</h1>
                 <div id="input-group" class="select-container">
                     <select name="size" id="size" class="select-box">
-                        <option value="">Select the size:</option>
+                        <option value="Select the size:">Select the size:</option>
                         <option value="07">Size 07</option>
                         <option value="08">Size 08</option>
                         <option value="09">Size 09</option>
                         <option value="10">Size 10</option>
                         <option value="11">Size 11</option>
                     </select>
-                    <div class="icon-container">
-                        <img src="css/caret-down-solid.svg">
-                    </div>
+                    <div class="error"></div>
                 </div>
                 <div id="input-group">
                     <label for="count">Number of items:</label>
@@ -86,9 +84,10 @@
                     <div class="error"></div>
                 </div>
                 <div id="radio-button">
-                    <input type="radio" name="Payment-method" id="card" checked>
-                    <label for="card">card</label>
-                    <input type="radio" name="Payment-method" id="Cash">
+                    <input type="radio" name="Payment-method" id="card" checked value="Card">
+                    <label for="card">Card</label>
+                    
+                    <input type="radio" name="Payment-method" id="cash" value="Cash on delivery">
                     <label for="cash">Cash on delivery</label>
                 </div>
                 <div id="input-group">
@@ -97,7 +96,7 @@
                 <div class="pop-up" id="pop-up">
                     <img src="correct-symbol.png" alt="pop-up-image">
                     <h2>Ordered successfully</h2>
-                    <p>You are ordered <span id="pop-up-span1"></span> products of product1</p>
+                    <p>Quantity:0<span id="pop-up-span1"></span></p>
                     <p >Size: <span id="si"></span>size</p>
                     <p>Payment method: <span id="Payment"></span></p>
                     <P>Price: $<span id="price"></span></P>
