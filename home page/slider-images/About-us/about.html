@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="styleSheet" href="navBar.css">
+    <link rel="styleSheet" href="./footer.css">
+    <link rel="styleSheet" href="about.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script defer src="slideBar.js"></script>
+</head>
+<body>
+    <div class="sign">
+        <ul>
+            <li><button>Sign-In</button></li>
+            <li><button>Sign-Up</button></li>
+        </ul>
+
+    </div>
+    <nav id="navbar">
+        
+
+            <ul class="side_items">
+                <li onclick="hideSlideBar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="10 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="../products/products.html" target="_blank">Product</a></li>
+                <li><a href="../review-page/review-page-new.html" target="_blank">Review</a></li>
+                <li><a href="../services/services.html" target="_blank">Services</a></li>
+            </ul>
+
+            <div class="logo">
+                <img src="adidas-logo.png" alt="logo"id="img">
+                <P>Shoes</P>
+            </div>
+
+             <ul>
+                
+                
+                <li class="hideOnMobile"><a href="../home.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#">Abot Us</a></li>
+                <li class="hideOnMobile"><a href="../products/products.html" target="blank">Product</a></li>
+                <li class="hideOnMobile"><a href="../review-page/review-page-new.html" target="blank">Review</a></li>
+                <li class="hideOnMobile"><a href="../services/services.html" target="blank">Services</a></li>
+                <li onclick="showSlideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+            </ul>
+          
+      
+    </nav>
+    <h1>About Us</h1>
+    <div class="container">
+        
+        <div class="container1">
+            <img src="adidas-logo-1560941914-03012190.avif" alt="about">
+        </div>
+        <div class="container2">
+            <h2>About Us</h2>
+            <p>Everything we do is rooted in sport. Sport plays an increasingly important role in more and more people’s lives, on and off the field of play. It is central to every culture and society, and is core to our health and happiness.</p>
+            <h3>OUR PURPOSE</h3>
+            <p>Our purpose, ‘Through sport, we have the power to change lives,’ guides the way we run our company, how we work with our partners, how we create our products, and how we engage with our consumers. We will always strive to expand the boundaries of human possibility, to include and unite people in sport, and to create a more sustainable world.</p>
+            <button id="see-more">Show More</button>
+        </div>
+    </div>
+    <div class="show-more">
+        <h3>OUR MISSION</h3>
+        <p>Athletes do not settle for average. And neither do we. We have a clear mission: To be the best sports brand in the world. Every day, we come to work to create and sell the best sports products in the world, and to offer the best service and consumer experience – and to do it all in a sustainable way. We are the best when we are the credible, inclusive, and sustainable leader in our industry.</p>
+    </div>
+    <div class="footer">
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p><a href="#">Colombo,Sri lanka,</a></p>
+            <p><a href="#">+654338164</a></p>
+            <p><a href="#">adidaspvt@gmail.com</a></p>
+        </div>
+        <div class="footer-box">
+            <h3>Get Help</h3>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Shipping</a></p>
+            <p><a href="#">Return</a></p>
+            <p><a href="#">Payment Options</a></p>
+
+        </div>
+        <div class="footer-box">
+            <h3>Our Stores</h3>
+            <p><a href="#">Sri lanka</a></p>
+            <p><a href="#">India</a></p>
+            <p><a href="#">USA</a></p>
+            <p><a href="#">UK</a></p>
+        </div>
+        <div class="footer-box">
+            <h3>News Letter</h3>
+            <div id="input-field">
+                <input type="mail" name="mail" id="mail" onblur="nullCheck()">
+                <label for="mail">Enter your mail address:</label>
+                <div id="error"></div>
+                <br>
+                <button id="btn">Subscribe</button>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    <div class="social-media-icons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+    </div>
+    
+    
+</body>
+</html>

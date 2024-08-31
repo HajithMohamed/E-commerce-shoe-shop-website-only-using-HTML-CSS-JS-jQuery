@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container1{
+    margin: 10px;
+    width: 49%;
+}
+.container1 img{
+    width: 100%;
+    height: 100%;
+}
+.container2{
+    width: 49%;
+    font-size: 20px;
+}
+.container2 button{
+    width: 200px;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+
+}
+.container2 button:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.show-more{
+    font-size: 20px;
+    display: none;
+}
+.show-more h3{
+    text-align: center;
+}
