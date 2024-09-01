@@ -45,11 +45,11 @@
     font-size: 20px;
 }
 .product-box .pop-up{
-    position: absolute;
+    position: fixed;
     width: 300px;
     background: whitesmoke;
     border-radius: 6px;
-    top:100%;
+    top:50%;
     left: 50%;
     transform: translate(-50%,-50%)scale(1);
     text-align: center;
@@ -58,6 +58,7 @@
     transition: transform 0.4s, top 0.4s;
 }
 .pop-up img{
+    
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;

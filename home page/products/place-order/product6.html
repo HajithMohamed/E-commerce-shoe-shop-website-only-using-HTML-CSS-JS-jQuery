@@ -51,8 +51,8 @@
       
     </nav>
     <div class="container">
-        <div class="product-image">
-            <img src="product-images/pngwing.com (9).png" alt="product1">
+        <div class="product-image"style="margin:0 ;">
+            <img src="product-images/pngwing.com (9).png" alt="product1" style="margin-top: 25px;margin-right: 50px;">
 
         </div>
         <div class="order-setails">
@@ -60,16 +60,14 @@
                 <h1>Purchasing Details</h1>
                 <div id="input-group" class="select-container">
                     <select name="size" id="size" class="select-box">
-                        <option value="">Select the size:</option>
+                        <option value="Select the size:">Select the size:</option>
                         <option value="07">Size 07</option>
                         <option value="08">Size 08</option>
                         <option value="09">Size 09</option>
                         <option value="10">Size 10</option>
                         <option value="11">Size 11</option>
                     </select>
-                    <div class="icon-container">
-                        <img src="css/caret-down-solid.svg">
-                    </div>
+                    <div class="error"></div>
                 </div>
                 <div id="input-group">
                     <label for="count">Number of items:</label>
@@ -87,9 +85,10 @@
                     <div class="error"></div>
                 </div>
                 <div id="radio-button">
-                    <input type="radio" name="Payment-method" id="card" checked>
-                    <label for="card">card</label>
-                    <input type="radio" name="Payment-method" id="Cash">
+                    <input type="radio" name="Payment-method" id="card" checked value="Card">
+                    <label for="card">Card</label>
+                    
+                    <input type="radio" name="Payment-method" id="cash" value="Cash on delivery">
                     <label for="cash">Cash on delivery</label>
                 </div>
                 <div id="input-group">
