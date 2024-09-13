@@ -9,7 +9,7 @@
     <link rel="styleSheet" href="footer.css">
     <link rel="styleSheet" href="products.css">
     <link rel="styleSheet" href="css/fontawesome/css/all.css">
-    <script defer src="Order.js"></script>
+    <script defer src="../product.js"></script>
 </head>
 <body>
     <div class="sign">
@@ -55,7 +55,7 @@
 
         </div>
         <div class="order-setails">
-            <form id="form" action="#">
+            <form id="form" action="#" onsubmit="oredersucces()">
                 <h1>Purchasing Details</h1>
                 <div id="input-group" class="select-container">
                     <select name="size" id="size" class="select-box">
@@ -93,20 +93,18 @@
                 <div id="input-group">
                     <button type="submit">Order</button>
                 </div>
-                <div class="pop-up" id="pop-up">
-                    <img src="correct-symbol.png" alt="pop-up-image">
-                    <h2>Ordered successfully</h2>
-                    <p>Quantity:0<span id="pop-up-span1"></span></p>
-                    <p >Size: <span id="si"></span>size</p>
-                    <p>Payment method: <span id="Payment"></span></p>
-                    <P>Price: $<span id="price"></span></P>
-                    <button type="button" onclick="closePopUp()">ok</button>
-                </div>
+                
             </form>
-
-            
-
         </div>
+        </div>
+        <div class="pop-up" id="pop-up">
+            <img src="correct-symbol.png" alt="pop-up-image">
+            <h2>Ordered successfully</h2>
+            <p>Quantity:0<span id="pop-up-span1"></span></p>
+            <p >Size: <span id="si"></span>size</p>
+            <p>Payment method: <span id="Payment"></span></p>
+            <P>Price: $<span id="price"></span></P>
+            <button type="button" onclick="closePopUp()">ok</button>
         </div>
     </div>
 

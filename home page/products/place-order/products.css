@@ -130,16 +130,15 @@ button:hover{
 #input-group .success input{
     border-bottom: 1px solid green;
 }
-.order-setails .pop-up{
+ .pop-up{
     width: 400px;
     background: whitesmoke;
     border-radius: 6px;
-    top:50%;
     left: 50%;
-    transform: translate(-50%,-100%)scale(1);
+    transform: translate(100%,-280%)scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
-    display: none;
+    visibility: hidden;
     transition: transform 0.4s, top 0.4s;
 }
 .pop-up p{
@@ -155,7 +154,7 @@ button:hover{
     border-radius: 20px;
     border: 3px solid whitesmoke;
 }
-.order-setails .pop-up img{
+ .pop-up img{
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
