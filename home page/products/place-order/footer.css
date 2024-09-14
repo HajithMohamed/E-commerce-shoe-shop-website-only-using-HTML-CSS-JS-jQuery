@@ -1,9 +1,10 @@
 .footer{
     margin-top: 10px;
-    height: 250px;
+    height: 270px;
     display: flex;
-    background-color:whitesmoke;  
-    border-bottom: 5px solid rgb(197, 48, 97);
+    background-color:black;  
+    border-bottom: 5px solid black;
+    color: azure;
 }
 .footer-box{
     padding: 5px;
@@ -12,25 +13,26 @@
 .footer-box p{
     padding-right: 10px;
     font-size: 20px;
+    color: azure;
 }
 .footer-box button{
-    background-color:rgb(197, 48, 97) ;
+    background-color:white ;
     height: 50px;
     width: 100px;
     border-radius:100px;
     border: white solid 3px;
-    color: white;
+    color:gray;
 }
 .footer-box input{
     border-radius: 100px;
     height: 50px;
-    border: rgb(197, 48, 97) solid 3px;
+    border: black solid 3px;
     width: 90%;
     margin-right: 10px;
 }
 .footer-box a{
     text-decoration: none;
-    color: black;
+    color:whitesmoke;
 
 }
 .footer-box a:hover,button:hover{
@@ -38,7 +40,7 @@
 }
 
 .footer-box h3{
-    color: rgb(197, 48, 97);
+    color: white;
     font-size: 28px;
 }
 .footer-box #error{
@@ -56,7 +58,7 @@
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    border: 3px solid rgb(197, 48, 97);
+    border: 3px solid black;
  
   }
 
@@ -82,15 +84,14 @@
   }
   .social-media-icons{
     text-align: center;
-    border-bottom: 5px solid rgb(197, 48, 97);
- 
+    border-bottom: 5px black;
   }
   #input-field{
     position: relative;
   }
   #input-field input{
     background:transparent;
-    outline: none;
+    border:2px solid gray;
     font-size: 18px;
     padding-left: 10px;
   }
@@ -99,14 +100,14 @@
     top: 20%;
     left:15px;
     transform: translateY(-50%);
-    color: #0d0b0b;
+    color:whitesmoke;
     font-size: 19px;
     pointer-events: none;
     transition: .3s;
     
   }
   #input-field input:focus{
-    border:2px solid rgb(197, 48, 97);
+    border:2px solid gray;
   }
   #input-field  input:focus ~ label,
   #input-field  input:valid ~ label{

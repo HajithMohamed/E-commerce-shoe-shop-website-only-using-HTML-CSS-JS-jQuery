@@ -1,9 +1,8 @@
-/* *{
+ *{
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(110, 100, 100);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
-}  */
+ }
 
 body{
     min-height: 100vh;
@@ -42,10 +41,11 @@ body{
 
  #navbar{
     
-    background: rgb(197, 48, 97);   
+    background: white;   
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    box-shadow: 0 0  8px black;
 } 
 
 
@@ -71,9 +71,9 @@ nav a{
     height: 100%;
     display: flex;
     padding: 0 30px;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
-    color: aliceblue;
+    color:rgb(110, 100, 100);
     font-family: ITC Avant Garde Gothic;
     font-weight: bold;
  
@@ -82,7 +82,7 @@ nav li:last-child{
     padding-left: 0;
 }
 nav a:hover{
-    font-size: 20px;
+    text-shadow: 0 0 4px rgb(64, 61, 61);
 }
 .logo{
     display: flex;
@@ -94,7 +94,7 @@ nav a:hover{
     padding-left: 10px;
     font-size: 16px;
     text-decoration: none;
-    color: aliceblue;
+    color: rgb(110, 100, 100);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
@@ -114,7 +114,7 @@ nav a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: rgb(197, 48, 97);    ;
+    background:black    ;
     padding:0;
 }
 .side_items li{
@@ -123,6 +123,7 @@ nav a:hover{
     width: 80%;
     padding-bottom: 30px;
     padding-left: 0;
+    color: black;
 }
 @media(max-width: 900px){
     .hideOnMobile{

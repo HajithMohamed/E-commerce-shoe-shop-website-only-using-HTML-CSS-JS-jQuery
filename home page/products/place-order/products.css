@@ -23,7 +23,7 @@
     height: 30px;
     margin: 10px 0 10px 0;
     border: none;
-    border-bottom: 3px solid rgb(197, 48, 97);
+    border-bottom: 3px solid black;
     font-size: 20px;
 }
 .order-setails #input-group input:focus,textarea:focus{
@@ -49,14 +49,14 @@
     padding: 0 30px 0 15px;
     width: 100%;
     color:white;
-    background-color:rgb(197, 48, 97) ;
+    background-color:black ;
     font-size: 20px;
     outline: none;
 }
 .select-container .icon-container{
     width: 50px;
     height: 100%;
-    background-color:rgb(230, 99, 142) ;
+    background-color:black ;
     position: absolute;
     display: flex;
     align-items: center;
@@ -77,13 +77,13 @@ h1{
 }
 #radio-button label{
     position: relative;
-    color: rgb(197, 48, 97);
+    color: black;
     font-family: "Popins",sans-serif;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 0.8em;
-    border: 3px solid rgb(197, 48, 97);
+    border: 3px solid black;
     padding: 1em 2em;
     border-radius: 0.5em;
     transition: background-color 0.3s, color 0.3s;
@@ -92,7 +92,7 @@ h1{
     content: "";
     height: 1em;
     width: 1em;
-    border: 3px solid rgb(197, 48, 97);
+    border: 3px solid black;
     border-radius: 50%;
     background-color: white;
     transition: background-color 0.3s, border 0.3s;
@@ -101,16 +101,16 @@ h1{
     height: 0.5em;
     width: 0.5em;
     border: 0.35em solid white;
-    background-color: rgb(197, 48, 97);
+    background-color: black;
 }
 #radio-button input[type="radio"]:checked + label {
-    background-color: rgb(197, 48, 97);
+    background-color: black;
     color: white;
 }
 #input-group button{
     margin-top: 10px;
     height: 50px;
-    background-color: rgb(197, 48, 97);
+    background-color: black;
     color: white;
     font-size: 20px;
     border-radius: 20px;
@@ -139,17 +139,18 @@ button:hover{
     text-align: center;
     padding: 0 30px 30px;
     visibility: hidden;
+    display: none;
     transition: transform 0.4s, top 0.4s;
 }
 .pop-up p{
-    color: rgb(197, 48, 97);
+    color: rgba(10, 4, 38, 0.06);
     font-size: 20px;
 }
 .pop-up button{
     width: 100%;
     height: 35px;
     color: white;
-    background-color: rgb(197, 48, 97);
+    background-color: rgb(78, 10, 10);
     font-size: 16px;
     border-radius: 20px;
     border: 3px solid whitesmoke;
