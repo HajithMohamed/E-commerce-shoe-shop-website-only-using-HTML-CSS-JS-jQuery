@@ -1,6 +1,7 @@
 
   function stockAmount1(productId) {
-    window.doller=parseInt(document.getElementById(`doller${productId}`).value) 
+    window.doller = parseInt(document.getElementById(`doller${productId}`).value);
+    console.log(window.doller);
     let productStock =0;
     let carded_stock=0;
     const initial_stock=parseInt(document.getElementById(`product${productId}`).value)
@@ -30,6 +31,10 @@ form.addEventListener("submit",(event)=>{
 
         event.preventDefault();
         
+     }
+     else{
+        event.preventDefault();
+        stockAmount();
      }
 })
 
@@ -101,7 +106,7 @@ function setSuccess(element){
 function stockAmount() {   
         
     const input = document.querySelector("#size");
-    const popUp2 = document.getElementById(`pop-up2`);
+    const popUp = document.getElementById(`pop-up`);
     const span1 = document.getElementById("pop-up-span1");
     const span2 = document.querySelector("#si");
     const span3 = document.querySelector("#price");
@@ -119,12 +124,14 @@ function stockAmount() {
         span4.innerHTML = "Cash on delivery";
     }
 
-    const price = qtyVal * doller;
+    const price = qtyVal * window.doller;
     span2.innerHTML = sizeVal;
     span1.innerHTML = qtyVal;
     span3.innerHTML = price;
-    popUp2.style.transform = "translate(120%,-130%)scale(1)";
-    popUp2.style.display = "block";
+    popUp.style.transform = "translate(120%,-130%)scale(1)";
+    popUp.style.display = "block";
+    console.log(window.doller);
+    
 }
 function closePopUp() {
   const popUp = document.getElementById(`pop-up`);
