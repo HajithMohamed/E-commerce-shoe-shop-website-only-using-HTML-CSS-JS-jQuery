@@ -1,17 +1,6 @@
 
   function stockAmount1(productId) {
-    window.doller = parseInt(document.getElementById(`doller${productId}`).value);
-    console.log(window.doller);
-    let productStock =0;
-    let carded_stock=0;
-    const initial_stock=parseInt(document.getElementById(`product${productId}`).value)
     const popUp = document.getElementById(`pop-up${productId}`);
-    productStock = initial_stock-1;
-    carded_stock=initial_stock-productStock;
-
-    document.getElementById(`pop-up-span${productId}`).innerHTML =  carded_stock;
-
-    
     popUp.style.display = "block"; 
 }
 function closePopUp1(productId) {
@@ -109,7 +98,6 @@ function stockAmount() {
     const popUp = document.getElementById(`pop-up`);
     const span1 = document.getElementById("pop-up-span1");
     const span2 = document.querySelector("#si");
-    const span3 = document.querySelector("#price");
     const span4 = document.querySelector("#Payment");
     
     const card = document.querySelector("#card");
@@ -123,14 +111,11 @@ function stockAmount() {
     } else if (cash.checked) {
         span4.innerHTML = "Cash on delivery";
     }
-
-    const price = qtyVal * window.doller;
     span2.innerHTML = sizeVal;
     span1.innerHTML = qtyVal;
-    span3.innerHTML = price;
     popUp.style.transform = "translate(120%,-130%)scale(1)";
     popUp.style.display = "block";
-    console.log(window.doller);
+    
     
 }
 function closePopUp() {

@@ -124,10 +124,10 @@ button:hover{
     color:red;
     font-size: 10px;
 }
-#input-group .fail input{
+ .fail input{
     border-bottom: 1px solid red;
 }
-#input-group .success input{
+.success input{
     border-bottom: 1px solid green;
 }
  .pop-up{
