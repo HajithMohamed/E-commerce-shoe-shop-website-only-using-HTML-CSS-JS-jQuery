@@ -17,11 +17,11 @@ body, .review-page-new {
 }
 
 .pop-up{
-    width: 50vw;
-    height: 67vh;
+    width: 25vw;
+    height: 70vh;
     top:25%;
     left: 50%;
-    transform: translate(50%,-3%)scale(1);
+    transform: translate(150%,-3%)scale(1);
     transition: transform 0.4s, top 0.4s;
     display:none;
 }
@@ -49,7 +49,7 @@ body, .review-page-new {
     margin: 10px 0 10px 0;
     padding: 10px;
     font-size: 18px;
-    border: 3px solid rgb(197, 48, 97);
+    border: 3px solid rgb(65, 62, 62);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .pop-up #form .input-group input:focus{
@@ -63,7 +63,7 @@ body, .review-page-new {
 }
 .pop-up #form .input-group textarea{
     height: 100px;
-    border: 3px solid rgb(197, 48, 97);
+    border: 3px solid rgb(65, 62, 62);
     border-radius: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
@@ -76,7 +76,7 @@ body, .review-page-new {
 .pop-up #form button{
     width: 100%;
     margin-bottom: 20px;
-    background-color: rgb(197, 48, 97);
+    background-color: rgb(65, 62, 62);
     border-radius: 20px;
     outline: none;
     font-size: 20px;
@@ -84,7 +84,7 @@ body, .review-page-new {
     height: 50px;
 }
 .pop-up #form button:hover{
-    background-color: rgb(3, 3, 3);
+    background-color: rgb(65, 62, 62);
     cursor: pointer;
 }
 .reviews{
