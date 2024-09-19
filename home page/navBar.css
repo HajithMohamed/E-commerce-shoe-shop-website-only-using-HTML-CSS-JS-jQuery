@@ -13,34 +13,30 @@ body{
     height: 25px;
 }
 .sign ul{
-    text-align: right;
-    display: flex;
-    align-items: right;
-    justify-content: right;
     list-style: none;
-    margin-top: 5px;
-    margin-right: 12px;
-    padding-left: 10px;
-}
-.sign li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     
-    padding-left: 15px;
 }
 .sign button{
+    height: 100%;
     border: none;
-    background-color: gold;
+    border-radius: 5px;
+    background-color: rgb(65, 62, 62);
     width:100px;
     height: 25px;
-    color:gray;
-
-}
-
-.sign button:hover{
+    color:white;
     font-weight: bold;
 }
 
+.sign button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: rgb(65, 62, 62);
+}
+
  #navbar{
-    
     background: white;   
     display: flex;
     align-items: center;
@@ -114,7 +110,7 @@ nav a:hover{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background:black    ;
+    background:white   ;
     padding:0;
 }
 .side_items li{

@@ -90,14 +90,14 @@
     
 }
 #paragraph h1{
-    color: rgb(197, 48, 97);  
+    color: rgb(65, 62, 62);  
     font-size: 40px;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
     
 }
 #paragraph button{
-    background-color:rgb(197, 48, 97) ;
+    background-color:rgb(65, 62, 62) ;
     height: 50px;
     width: 150px;
     border-radius: 10px;
@@ -119,7 +119,7 @@
     padding-left: 10px;
     height: 40px;
     width: 150px;
-    background-color:rgb(197, 48, 97) ;
+    background-color:rgb(65, 62, 62);
     border-radius: 50px;
 }
 @media(max-width: 900px){

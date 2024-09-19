@@ -5,6 +5,8 @@ h1{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: justify;
+    padding: 10px;
 }
 .container1{
     margin: 10px;
