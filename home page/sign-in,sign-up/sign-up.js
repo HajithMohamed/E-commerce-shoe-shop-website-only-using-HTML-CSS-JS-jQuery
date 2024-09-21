@@ -44,3 +44,31 @@ const validateEmail = (email) => {
         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       );
   };
+
+  const iconpwd=document.getElementById("icon-pwd")
+  const iconcpwd=document.getElementById("icon-cpwd")
+
+  iconpwd.addEventListener("click",()=>{
+    const pwd=document.querySelector("#pwd")
+
+    if(pwd.type=="password"){
+        pwd.type="text"
+        iconpwd.src="eye-open.png"
+    }
+    else{
+        pwd.type="password"
+        iconpwd.src="eye-close.png"
+    }
+  })
+  iconcpwd.addEventListener("click",()=>{
+    const cpwd=document.querySelector("#cpwd")
+
+    if(cpwd.type=="password"){
+        cpwd.type="text"
+        iconcpwd.src="eye-open.png"
+    }
+    else{
+        cpwd.type="password"
+        iconcpwd.src="eye-close.png"
+    }
+  })

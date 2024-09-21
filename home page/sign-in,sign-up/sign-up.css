@@ -66,3 +66,18 @@
     color: white;
     display: none;
 }
+
+.container-form .pwd-icon{
+    display: flex;
+    align-items: center;
+    background-color:white;
+    height: 45px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.container-form .pwd-icon img{
+    margin-right: 10px;
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
