@@ -5,7 +5,7 @@ form.addEventListener("submit",(event)=>{
         event.preventDefault()
     }
     else{
-        window.location.href="Sign-In.html"
+        window.location.href="sign-in.html"
     }
 })
 
