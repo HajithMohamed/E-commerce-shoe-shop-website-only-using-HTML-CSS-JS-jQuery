@@ -125,3 +125,15 @@ body, .review-page-new {
     font-size: 10px;
     padding-left: 30px;
 }
+@media (max-width: 480px) {
+    .pop-up {
+        width: 95vw;
+        height: auto;
+    }
+
+    .reviews .review {
+        width: 100%; /* One review per row */
+    }
+
+    
+}

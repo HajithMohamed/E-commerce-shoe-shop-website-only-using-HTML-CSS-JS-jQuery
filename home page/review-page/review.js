@@ -39,23 +39,30 @@ function addDiv() {
     const feedbackVAl1 =feedback.value;
     const ratingVAL = rating.value;
 
-    console.log(feedbackVAl1)
+    localStorage.setItem("name",nameVal)
+    localStorage.setItem("feedBack",feedbackVAl1)
+    localStorage.setItem("rating",ratingVAL)
 
-    const newReviewContent = `
-    <div class="review" >
-        <h2>${nameVal}</h2>
-         <div class="rating">
-            <p>Rating: <span id="rating">${ratingVAL}</span> Stars</p>
-        </div>
-        <div class="para">
-            <p>${feedbackVAl1}</p>
-        </div>
-    </div>
-       `;
-        console.log(global);
-        
-    review.innerHTML += newReviewContent;
-    review.style.display = "flex";
+
+    window.onload=()=>{
+        const newReviewContent = `
+        <div class="review" >
+            <h2>${localStorage.getItem("name",nameVal)}</h2>
+             <div class="rating">
+                <p>Rating: <span id="rating">${localStorage.getItem("rating",ratingVAL)}</span> Stars</p>
+            </div>
+            <div class="para">
+                <p>${localStorage.getItem("feedBack",feedbackVAl1)}</p>
+            </div>
+        </div>`;
+        review.innerHTML += newReviewContent;
+        review.style.display = "flex";
+        name1.value=""
+        feedback.value=""
+        rating.value=""
+    }
+   
+
 }
 
 function closePopUp() {
@@ -84,9 +91,7 @@ function validateForm(){
         isValid = false;
     } else if(isNaN(ratingVAL)){
         setError(rating, "Rating should be in numbers");
-        isValid = false;
-
-       
+        isValid = false;  
     }
     
     return isValid

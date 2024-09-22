@@ -1,14 +1,15 @@
-.footer{
-  margin-top: 10px;
-  height: 270px;
+.footer {
   display: flex;
-  background-color:rgb(65, 62, 62);  
-  border-bottom: 5px solid black;
-  color: azure;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(65, 62, 62);
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .footer-box{
-  padding: 5px;
-  width: 25%;
+    flex: 1 1 200px; /* Flexibly allocate space based on available width */
+    margin: 10px;
+    box-sizing: border-box;
 }
 .footer-box p{
   padding-right: 10px;
@@ -121,22 +122,91 @@ margin-left: 20px;
   font-size: 19px;
   background: rgb(65, 62, 62);
 }
-@media(max-width: 900px){
-  .footer-box h3{
-    font-size: 20px;
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
   }
-  .footer-box p{
-    font-size: 16px;
+
+  .footer-box {
+      width: 100%; /* Full width for each box */
+      text-align: center; /* Center text */
+      margin-bottom: 20px; /* Space between boxes */
   }
-  #input-field label{
-    font-size: 16px;
+
+  #input-field input {
+      width: 90%; /* Slightly narrower input */
+      margin: 10px auto; /* Center the input */
   }
-  #input-field  input:focus ~ label,
-  #input-field  input:valid ~ label{
-  font-size: 12px;
-}
-.footer-box:last-child {
-  display:block;
+
+  #input-field button {
+      width: 90%; /* Match input width */
+  }
+
+  .social-media-icons a {
+      font-size: 28px; /* Adjust icon size */
+  }
 }
 
+/* Specific Styles for 732px */
+@media (max-width: 732px) {
+  .footer {
+      padding: 10px; /* Reduce padding */
+  }
+
+  .footer-box {
+      margin: 5px; /* Less margin for tighter spacing */
+  }
+
+  .footer-box h3 {
+      font-size: 18px; /* Slightly smaller headings */
+  }
+
+  .footer-box p a {
+      font-size: 14px; /* Smaller link text */
+  }
+
+  #input-field input {
+      font-size: 14px; /* Smaller input text */
+  }
+
+  #input-field button {
+      font-size: 14px; /* Smaller button text */
+  }
+
+  .social-media-icons a {
+      font-size: 24px; /* Adjust icon size */
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .footer-box {
+      width: 100%; /* Full width for each box */
+  }
+
+  .footer-box h3 {
+      font-size: 16px; /* Smaller headings */
+  }
+
+  .footer-box p a {
+      font-size: 12px; /* Smaller link text */
+  }
+
+  #input-field input {
+      width: 100%; /* Full width for input */
+      padding: 8px; /* Smaller padding */
+  }
+
+  #input-field button {
+      width: 100%; /* Full width for button */
+  }
+
+  .social-media-icons a {
+      font-size: 30px; /* Larger icons for touch screens */
+  }
 }
