@@ -40,3 +40,18 @@ function setError(message){
     error.style.display="block"
 
 }
+
+const iconpwd=document.getElementById("icon-pwd")
+
+iconpwd.addEventListener("click",()=>{
+  const pwd=document.querySelector("#pwd")
+
+  if(pwd.type=="password"){
+      pwd.type="text"
+      iconpwd.src="eye-open.png"
+  }
+  else{
+      pwd.type="password"
+      iconpwd.src="eye-close.png"
+  }
+})
