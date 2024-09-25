@@ -64,7 +64,7 @@
     background:red;
     border-radius: 5px;
     color: white;
-    display: none;
+    display: block;
 }
 
 .container-form .pwd-icon{
