@@ -1,6 +1,7 @@
 #products{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    min-width: 1000px;
 }
 #products .product-box{
     height: 570px;
@@ -13,8 +14,6 @@
 #products .product-box .product-image{
     height: 300px;
     padding-top: 10px;
-    
-
 }
 #products .product-box .product-image img{
     height: 300px;
@@ -65,7 +64,6 @@
     transition: transform 0.4s, top 0.4s;
 }
 .pop-up img{
-    
     width: 100px;
     margin-top: -50px;
     border-radius: 50%;
