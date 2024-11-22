@@ -1,5 +1,4 @@
-
-  function stockAmount1(productId) {
+function stockAmount1(productId) {
     const popUp = document.getElementById(`pop-up${productId}`);
     popUp.style.display = "block"; 
 }
@@ -93,7 +92,6 @@ function setSuccess(element){
 
 }
 function stockAmount() {   
-        
     const input = document.querySelector("#size");
     const popUp = document.getElementById(`pop-up`);
     const span1 = document.getElementById("pop-up-span1");
@@ -113,10 +111,8 @@ function stockAmount() {
     }
     span2.innerHTML = sizeVal;
     span1.innerHTML = qtyVal;
-    popUp.style.transform = "translate(120%,-130%)scale(1)";
+    popUp.style.transform = "translate(-50%, -50%) scale(1)";
     popUp.style.display = "block";
-    
-    
 }
 function closePopUp() {
   const popUp = document.getElementById(`pop-up`);

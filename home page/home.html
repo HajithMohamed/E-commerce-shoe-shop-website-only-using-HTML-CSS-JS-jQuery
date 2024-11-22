@@ -9,69 +9,55 @@
     <link rel="styleSheet" href="home-page.css">
     <link rel="styleSheet" href="footer.css">
     <script defer src="slideBar.js"></script>
+    <script defer src="slider.js"></script>
 </head>
 <body>
     <div class="sign">
         <ul>
             <li><button><a href="/home page/sign-in,sign-up/sign-in.html">Sign-In</a></button></li>
-            <li><button><a href="/home page/sign-in,sign-up/sign-up.html">Sign-Un</a></button></li>
+            <li><button><a href="/home page/sign-in,sign-up/sign-up.html">Sign-Up</a></button></li>
         </ul>
-
     </div>
     <nav id="navbar">
-        
-
-            <ul class="side_items">
-                <li onclick="hideSlideBar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="10 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="./About-us/about.html" target="_blank">About</a></li>
-                <li><a href="products/products.html" target="_blank">Product</a></li>
-                <li><a href="review-page/review-page-new.html" target="_blank">Review</a></li>
-                <li><a href="services/services.html" target="_blank">Services</a></li>
-            </ul>
-
-            <div class="logo">
-                <img src="/background.png" alt="logo"id="img">
-                <P>Shoes</P>
-            </div>
-
-             <ul>
-                
-                <li class="hideOnMobile"><a href="home.html">Home</a></li>
-                <li class="hideOnMobile"><a href="./About-us/about.html" target="_blank">Abot Us</a></li>
-                <li class="hideOnMobile"><a href="products/products.html" target="blank">Product</a></li>
-                <li class="hideOnMobile"><a href="review-page/review-page-new.html" target="blank">Review</a></li>
-                <li class="hideOnMobile"><a href="services/services.html" target="blank">Services</a></li>
-                <li onclick="showSlideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-
-            </ul>
-          
-      
+        <ul class="side_items">
+            <li onclick="hideSlideBar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="10 -960 960 960" width="30px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="./About-us/about.html" target="_blank">About Us</a></li>
+            <li><a href="products/products.html" target="_blank">Product</a></li>
+            <li><a href="review-page/review-page-new.html" target="_blank">Review</a></li>
+            <li><a href="services/services.html" target="_blank">Services</a></li>
+        </ul>
+        <div class="logo">
+            <img src="/background.png" alt="logo"id="img">
+            <P>Shoes</P>
+        </div>
+        <ul>
+            <li class="hideOnMobile"><a href="home.html">Home</a></li>
+            <li class="hideOnMobile"><a href="./About-us/about.html" target="_blank">About Us</a></li>
+            <li class="hideOnMobile"><a href="products/products.html" target="_blank">Product</a></li>
+            <li class="hideOnMobile"><a href="review-page/review-page-new.html" target="_blank">Review</a></li>
+            <li class="hideOnMobile"><a href="services/services.html" target="_blank">Services</a></li>
+            <li onclick="showSlideBar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="30px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
     </nav>
     <div id="home-page">
        <div id="container">
         <div id="home-image">
-            <div id="slider-image1"></div>
-            <div id="slider-image2"></div>
-            <div id="slider-image3"></div>
-            <div id="slider-image4"></div>
+            <img id="slider-image" src="slider-images/home-shoe.png" alt="Slider Image">
         </div>
         <div class="button-holder">
-            <a href="#button-slider1" class="button"></a>
-            <a href="#button-slider2" class="button"></a>
-            <a href="#button-slider3" class="button"></a>
-            <a href="#button-slider4" class="button"></a>
+            <button class="button" onclick="changeSlide(0)"></button>
+            <button class="button" onclick="changeSlide(1)"></button>
+            <button class="button" onclick="changeSlide(2)"></button>
+            <button class="button" onclick="changeSlide(3)"></button>
         </div>
-
        </div>
-        
         <div id="paragraph">
             <h1>Addidas Collections</h1>
             <p>Adidas, one of the largest sportswear manufacturers around the world, has its cultural influence in sports, media and music entertainment you’ve seen the three stripes iconography. “Looking back at my childhood I and would try to bring our fresh Adidas sneakers into school to compare who’s are better.” Whilst praising Adidas for their achievements there’s always a conversation via online or in-person about who their competitors are, their value market and cultural impact. Looking at the milestones they’ve achieved is expected, viewing brand rankings, they come as runner ups in comparison to the American founded company Nike. I believe this would be an opportunity to revamp the current look of Adidas to engage with its current audience and attract a new audience through UX/UI.</p>
             <div id="atag"><a href="products/products.html" target="_blank">Shop More </a></div>
         </div>
     </div>
-
     <div class="footer">
         <div class="footer-box">
             <h3>Contact</h3>
@@ -85,7 +71,6 @@
             <p><a href="#">Shipping</a></p>
             <p><a href="#">Return</a></p>
             <p><a href="#">Payment Options</a></p>
-
         </div>
         <div class="footer-box">
             <h3>Our Stores</h3>
@@ -97,22 +82,19 @@
         <div class="footer-box">
             <h3>News Letter</h3>
             <div id="input-field">
-                <input type="mail" name="mail" id="mail" onblur="nullCheck()">
+                <input type="email" name="mail" id="mail" onblur="nullCheck()">
                 <label for="mail">Enter your mail address:</label>
                 <div id="error"></div>
                 <br>
                 <button id="btn">Subscribe</button>
             </div>
         </div>
-        
     </div>
     <div class="social-media-icons">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-facebook" aria-label="Facebook"></a>
+        <a href="#" class="fa fa-twitter" aria-label="Twitter"></a>
+        <a href="#" class="fa fa-instagram" aria-label="Instagram"></a>
+        <a href="#" class="fa fa-linkedin" aria-label="LinkedIn"></a>
     </div>
-    
-    
 </body>
 </html>

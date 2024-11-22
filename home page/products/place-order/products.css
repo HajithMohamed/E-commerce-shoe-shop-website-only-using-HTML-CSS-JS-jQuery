@@ -135,7 +135,7 @@ button:hover{
     background: whitesmoke;
     border-radius: 6px;
     left: 50%;
-    transform: translate(100%,-280%)scale(0.1);
+    transform: translate(-50%, -50%) scale(1);
     text-align: center;
     padding: 0 30px 30px;
     display: none;

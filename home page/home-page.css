@@ -1,12 +1,11 @@
-
-#home-page{
+#home-page {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     height: 800px;
-   
 }
-#paragraph{
+
+#paragraph {
     margin: auto;
     padding: auto;
     font-size: 20px;
@@ -15,190 +14,229 @@
     text-align: justify;
     padding-left: 20px;
 }
-#container{
+
+#container {
     height: 700px;
     display: grid;
     width: 55%;
     overflow: hidden;
-    grid-template-columns: repeat(4,100%);
+    grid-template-columns: repeat(4, 100%);
     background-color: whitesmoke;
 }
-#container #home-image{
+
+#container #home-image {
     height: 550px;
-    display: grid;
-    grid-template-columns: repeat(4,100%);
-    animation: slider 30s ease-in-out infinite alternate;
-    height: 100%;
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
-#container #home-image #slider-image1{
+
+#container #home-image #slider-image1 {
     background-image: url(slider-images/home-shoe.png);
     background-position: center;
     background-size: cover;
 }
-#container #home-image #slider-image2{
+
+#container #home-image #slider-image2 {
     background-image: url(slider-images/pngwing.com\ \(4\).png);
     background-position: center;
     background-size: cover;
 }
-#container #home-image #slider-image3{
+
+#container #home-image #slider-image3 {
     background-image: url(slider-images/pngwing.com.png);
     background-position: center;
     background-size: cover;
     top: 5%;
 }
-#container #home-image #slider-image4{
+
+#container #home-image #slider-image4 {
     background-image: url(slider-images/pngwing.com\ \(6\).png);
     background-position: center;
     background-size: cover;
 }
-#container .button-holder .button{
+
+#container .button-holder .button {
     background-color: white;
     width: 15px;
     height: 15px;
     border-radius: 15px;
     display: inline-block;
-    margin:auto ;
-
-}
-#container .button-holder{
-    position: absolute;
-    left: 25%;
-    bottom: 0%;
-
-}
-@keyframes slider{
-    0%{transform: translateX(0%);}
-    10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
-    90%{transform: translateX(0%);}
-    100%{transform: translateX(0%);}
+    margin: 5px;
+    cursor: pointer;
 }
 
-
-#container #home-image img{
-    margin: auto;
-    padding: auto;
-    height: 900px;
-    width: 600px;
-    
+#container .button-holder {
+    text-align: center;
+    margin-top: 10px;
 }
-#paragraph h1{
-    color: rgb(65, 62, 62);  
+
+@keyframes slider {
+    0% {
+        transform: translateX(0%);
+    }
+    10% {
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: translateX(-100%);
+    }
+    30% {
+        transform: translateX(-200%);
+    }
+    40% {
+        transform: translateX(-200%);
+    }
+    50% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-300%);
+    }
+    70% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    90% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+#container #home-image img {
+    width: 100%;
+    height: auto;
+    transition: opacity 1s ease-in-out;
+}
+
+#paragraph h1 {
+    color: rgb(65, 62, 62);
     font-size: 40px;
     font-family: "Lucida Console", "Courier New", monospace;
     text-align: center;
-    
 }
-#paragraph button{
-    background-color:rgb(65, 62, 62) ;
+
+#paragraph button {
+    background-color: rgb(65, 62, 62);
     height: 50px;
     width: 150px;
     border-radius: 10px;
     border: white solid 3px;
 }
-#paragraph p,h1{
+
+#paragraph p,
+h1 {
     margin-right: 20px;
     margin-bottom: 10px;
 }
-#paragraph #atag a{
+
+#paragraph #atag a {
     margin-top: 10px;
     color: white;
     text-decoration: none;
     font-size: 20px;
 }
-#paragraph #atag{
+
+#paragraph #atag {
     margin: auto;
     text-align: center;
     padding-left: 10px;
     height: 40px;
     width: 150px;
-    background-color:rgb(65, 62, 62);
+    background-color: rgb(65, 62, 62);
     border-radius: 50px;
 }
-@media(max-width: 900px){
-    #home-page{
+
+@media (max-width: 900px) {
+    #home-page {
         display: inline;
     }
-    #paragraph{
+
+    #paragraph {
         padding: 10px;
         width: 100%;
         margin-top: 20px;
         padding-right: 20px;
     }
-    #container{
+
+    #container {
         width: 100%;
         height: fit-content;
-        
     }
+
     #container #home-image {
         height: 600px;
         width: 700px;
-
     }
-    #container #home-image img{
+
+    #container #home-image img {
         margin: auto;
         height: fit-content;
         width: 100%;
     }
-} 
-@media(max-width: 767px){
-    #home-page{
+}
+
+@media (max-width: 767px) {
+    #home-page {
         display: inline;
     }
-    #paragraph{
+
+    #paragraph {
         padding: 10px;
         width: 100%;
         margin-top: 20px;
         padding-right: 20px;
     }
-    #container{
+
+    #container {
         width: 100%;
         height: fit-content;
-        
     }
+
     #container #home-image {
         height: 500px;
         width: 600px;
-
     }
-    #container #home-image img{
+
+    #container #home-image img {
         margin: auto;
         height: 350px;
         width: 600px;
     }
-} 
-@media(max-width: 600px){
-    #home-page{
+}
+
+@media (max-width: 600px) {
+    #home-page {
         display: inline;
     }
-    #paragraph{
+
+    #paragraph {
         font-size: medium;
         padding: 10px;
         width: 100%;
         margin-top: 20px;
         padding-right: 20px;
     }
-    #container{
+
+    #container {
         width: 100%;
         height: fit-content;
-        
     }
+
     #container #home-image {
         height: 400px;
         width: 500px;
-
     }
-    #container #home-image img{
+
+    #container #home-image img {
         margin: auto;
         height: 200px;
         width: 100%;
     }
-} 
+}
 
